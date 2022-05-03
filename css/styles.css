@@ -11,6 +11,10 @@ body {
  letter-spacing: 0.03em;
 }
 
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 /* Верхняя линия */
 
 .header {
@@ -19,6 +23,14 @@ body {
  font-size: 14px;
  line-height: 1.14;
 }
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}  
+
 .logo {
  color: var(--accent-color);
  font-family: Raleway, cursive;
@@ -60,6 +72,8 @@ body {
 .site-nav,
 .auth-nav {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Main */
@@ -67,14 +81,19 @@ body {
 
 .hero {
     background-color: #2F303A;
+    text-align: center;
 }
 
+
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: #FFFFFF;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -83,15 +102,18 @@ body {
 .button {
     font-family: 'Roboto',sans-serif;
     color: #ffffff;
-    background-color: #2196F3;
+    background-color:var(--accent-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+
+    border-radius: 4px;
+    
 }
 
 .button:hover {
@@ -107,6 +129,8 @@ body {
 }
 .feature-list{
     list-style: none;
+    
+   
 }
 .section-title {
     color: var(--title-text-color);
@@ -114,6 +138,9 @@ body {
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .feature-list .title {
     color: var(--title-text-color);
@@ -121,6 +148,8 @@ body {
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
 }
 .feature-text {
     font-size: 14px;
@@ -130,14 +159,17 @@ body {
 /* Work (Чем мы занимаемся) */
 .section-work {
 
+   
 }
 .work-list {
     list-style: none;
+    margin-bottom: 0;
 }
 /* Team (Наша команда) */
 
 .section-team {
     background-color: #F5F4FA;
+    padding-top: 76px;
 }
 .team-list{
     list-style: none;
